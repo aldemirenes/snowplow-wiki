@@ -33,7 +33,7 @@ With Spark 1.x you can use version <= 0.2.0.
 
 ### 3. Setup
 
-The latest version of Snowplow Scala Analytics SDK is 0.3.1 and it is available on Maven Central.
+The latest version of Snowplow Scala Analytics SDK is 0.4.2 and it is available on Maven Central.
 
 <a name="sbt" />
 
@@ -43,7 +43,7 @@ If you’re using SBT, add the following lines to your build file:
 
 ```scala
 // Dependency
-libraryDependencies += "com.snowplowanalytics" %% "snowplow-scala-analytics-sdk" % "0.3.1"
+libraryDependencies += "com.snowplowanalytics" %% "snowplow-scala-analytics-sdk" % "0.4.2"
 ```
 
 Note the double percent (`%%`) between the group and artifactId. This will ensure that you get the right package for your Scala version.
@@ -58,7 +58,7 @@ If you are using Gradle in your own job, then add following lines in your `build
 dependencies {
     ...
     // Snowplow Scala Analytics SDK
-    compile 'com.snowplowanalytics:snowplow-scala-analytics-sdk_2.11:0.3.1'
+    compile 'com.snowplowanalytics:snowplow-scala-analytics-sdk_2.11:0.4.2'
     }
 ```
 
@@ -74,7 +74,7 @@ If you are using Maven in your own job, then add following lines in your `pom.xm
 <dependency>
     <groupId>com.snowplowanalytics</groupId>
     <artifactId>snowplow-scala-analytics-sdk_2.11</artifactId>
-    <version>0.3.1</version>
+    <version>0.4.2</version>
 </dependency>
 ```
 

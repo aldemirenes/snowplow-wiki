@@ -87,6 +87,7 @@ Along with the `Event` case class, the JSON Event Transformer comes with the fol
 - `event.inventory` - extracts metadata from the event containing information about the types and Iglu URIs of its shred properties (unstruct_event, contexts and derived_contexts). Unlike version 0.3.0, it no longer requires a `transformWithInventory` call and can be obtained from any `Event` instance.
 - `atomic` - returns the event as a map of keys to Circe JSON values, while dropping inventory fields. This method can be used to modify an event's JSON AST before converting it into a final result.
 - `ordered` - returns the event as a list of key/Circe JSON value pairs. Unlike `atomic`, which has randomized key ordering, this method returns the keys in the order of the canonical event model, and is particularly useful for working with relational databases.
+- `circeJson.as[Event]` - Encoded [Circe](circe) Event JSON can be decoded to Event since Event decoder is provided in the SDK but bear in mind it works only for non-lossy encoding.
 
 ### Event inventory
 
@@ -146,3 +147,4 @@ def recordHandler(event: KinesisEvent) {
 [Back to Scala Analytics SDK contents][contents]
 
 [contents]: Scala-Analytics-SDK
+[circe]: https://circe.github.io/circe/
